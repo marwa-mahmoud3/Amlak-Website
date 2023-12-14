@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+    --primary-blue-green: #1D6D5D;
+    --blue-green-light: #22816E;
+    /* --salmon-color: #F0B499; */
+    --salmon-light-color: #F0B499;
+    --primary-text-color: #0F0F0F;
+    --secondary-text-color: #5F6C76;
+    --gray-text-color: #ACACAC;
+    --gray-bg-color: #F2F2F2;
+    --gray-bg-dash: #F0F0F5;
+    --gray-border: #EEEEEE;
+    --link-color: #0057FF;    
+    --white-color: #FFFFFF;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a, a:link{
+    text-decoration: none;
+}
+.lang a:hover,
+.lang:hover{
+    cursor: pointer;
+}

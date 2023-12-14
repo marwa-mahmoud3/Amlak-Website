@@ -1,0 +1,73 @@
+/* 
+    1- HERO
+    1.1- hero title
+    1.2- hero photo    
+
+    3- MEDIA
+ */
+
+/* 1- HERO */
+.hero {
+  position: relative;
+  height: 668px;
+  background: url(../../../../../../assets/images/Amlak-Images/hero-bg.png) no-repeat center;
+  background-size: cover;
+}
+
+/* 1.1 hero title */
+
+.hero .text h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+/* 1.2- hero photo */
+.hero .photo {
+  position: absolute;
+  bottom: 0px;
+}
+
+@media screen and (max-width: 1210px) {
+  .hero img {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero .text h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 38px;
+  }
+
+  .hero img {
+    height: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero {
+    height: 550px;
+  }
+
+  .hero .text h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .hero {
+    height: 500px;
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .hero {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 368px) {
+  .hero {
+    height: 400px;
+  }
+}

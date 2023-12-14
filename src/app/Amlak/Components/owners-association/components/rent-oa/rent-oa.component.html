@@ -1,0 +1,68 @@
+<section class="rent-oa">    
+   <div class="container position-relative">
+    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link rent shadow-none active" id="pills-rent-tab" data-bs-toggle="pill" data-bs-target="#pills-rent" type="button" role="tab" aria-controls="pills-rent" aria-selected="true">{{'Pay The Rent' | translate}}</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link fee shadow-none" id="pills-fee-tab" data-bs-toggle="pill" data-bs-target="#pills-fee" type="button" role="tab" aria-controls="pills-fee" aria-selected="false">{{'Owners Association fees' | translate}}</button>
+        </li>
+    </ul>
+   </div>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab" tabindex="0">
+            <div class="green-title">
+                <h2>{{'Pay The Rent' | translate}}</h2>
+            </div>
+            <div class="content">
+               <div class="container">
+                <div class="deadline d-flex align-items-center">
+                    <p class="pay me-3">{{'Deadline for payment' | translate}}</p>
+                    <p class="time"><span>00</span> {{'D' | translate}}</p>
+                </div>
+                <form>
+                    <div>
+                        <input type="text" class="form-control shadow-none" placeholder="{{'Your Name' | translate}}" name="name" autocomplete="name">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control shadow-none" placeholder="{{'Personal ID number' | translate}}" name="id" autocomplete="cc-number">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control shadow-none" placeholder="{{'Unit code' | translate}}" name="code" autocomplete="off">
+                    </div>
+                    <div class="btns">
+                        <button type="submit" class="btn">{{'Submit' | translate}}</button>
+                    </div>
+                </form>
+               </div> 
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-fee" role="tabpanel" aria-labelledby="pills-fee-tab" tabindex="0">
+            <div class="green-title">
+                <h2>{{'Owners Association fees' | translate}}</h2>
+            </div>
+            <div class="content">
+                <div class="container">
+                 <div class="deadline d-flex align-items-center">
+                     <p class="pay me-3">{{'Free value' | translate}}</p>
+                     <p class="time"><span>95</span> $</p>
+                 </div>
+                 <form>
+                     <div>
+                         <input type="text" class="form-control shadow-none" placeholder="{{'Your Name' | translate}}" name="name" autocomplete="name">
+                     </div>
+                     <div>
+                         <input type="text" class="form-control shadow-none" placeholder="{{'Personal ID number' | translate}}" name="id" autocomplete="cc-number">
+                     </div>
+                     <div>
+                         <input type="text" class="form-control shadow-none" placeholder="{{'Unit code' | translate}}" name="code" autocomplete="off">
+                     </div>
+                     <div class="btns">
+                         <button type="submit" class="btn">{{'Submit' | translate}}</button>
+                     </div>
+                 </form>
+                </div> 
+             </div>
+        </div>
+    </div>    
+</section>

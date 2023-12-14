@@ -1,0 +1,11 @@
+.about .content .topic h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+@media screen and (max-width: 991px) {        
+    .about .content .topic h2{
+        font-size: 18px;
+    }    
+}

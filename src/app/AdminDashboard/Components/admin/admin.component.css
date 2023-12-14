@@ -1,0 +1,15 @@
+.admin{
+    background: #fbfbfb;
+}
+main{
+    gap: 30px;
+}
+.col-lg-9, .col-lg-3{
+    flex: auto;
+}
+@media screen and (max-width: 991px) {
+    aside{
+        display: none;
+        opacity: 0;
+    }
+}

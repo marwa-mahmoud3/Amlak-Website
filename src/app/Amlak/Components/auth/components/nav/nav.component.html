@@ -1,0 +1,8 @@
+<nav>
+    <div class="container">
+        <div class="auth">
+            <a [ngClass]="{'active': pageName == 'login'}" (click)="changePage('login')" class="btn login" routerLink="/login">{{'Login'  | translate}}</a>
+            <a [ngClass]="{'active': pageName == 'sign-up'}" (click)="changePage('sign-up')" class="btn sign-up" routerLink="/sign-up">{{'Sign Up'  | translate}}</a>
+        </div>
+    </div>
+</nav>

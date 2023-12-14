@@ -1,0 +1,23 @@
+.about .content .about-photo img{
+    height: 555px;
+}
+
+.about .content .topic h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+.about .content .topic .colored{
+    color: var(--primary-blue-green);
+}
+    
+@media screen and (max-width: 991px){        
+    .about .content .about-photo img{
+        height: 292px;
+    }    
+    .about .content .topic h3 {
+        font-size: 18px;
+        font-weight: 400;
+     }    
+}
+

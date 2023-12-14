@@ -1,0 +1,81 @@
+/* 
+    0- SHARED STYLES
+
+    1- FOOTER
+    1.1- logo
+    1.2- links    
+
+    2- COPYRIGHT
+
+    3- MEDIA
+ */
+/* 1- footer */
+footer{
+    background-color: var(--primary-blue-green);
+    padding-top: 38px;
+    padding-bottom: 30px;
+}
+footer .content{
+    row-gap: 47px;
+}
+/* 0- shared styles */
+footer .content ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+footer .content ul a{
+    color: var(--white-color);
+}
+footer .content ul li{
+    margin-top: 20px;
+}
+footer .content h1{
+    color: var(--white-color);
+    font-size: 22px;
+}
+/* 1.1 logo */
+footer .content .logo .text{
+    padding: 28px 0px;
+}
+footer .content .logo .text p{
+    color: var(--white-color);
+}
+footer .content .logo .lists li{
+    display: inline-block;
+    padding: 0px 7px;
+}
+
+footer .content .logo .lists li a{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+footer .content .logo .lists li a svg{
+    width: 15px;
+    height: 15px;
+}
+/* 1.2- links  */
+footer .content .links a{    
+    border-bottom: 1px solid var(--white-color);
+}
+
+/* 2- COPYRIGHT */
+footer .copyright{
+    padding-top: 33px;
+}
+footer .copyright p{
+    color: var(--white-color);
+}
+footer .copyright span{
+    color: #04FFF0;
+}
+
+/* 3- MEDIA */
+@media screen and (max-width: 991px) {
+
+}
+@media screen and (max-width: 575px) {}

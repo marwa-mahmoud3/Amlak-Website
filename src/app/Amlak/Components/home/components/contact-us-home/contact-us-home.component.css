@@ -1,0 +1,84 @@
+/* 
+    1- CONTACT
+    1.1- contact title
+    1.2- contact content
+        1.2.1- contact-photo
+        1.2.2- contact-info
+
+    2- MEDIA
+*/
+/* 1- CONTACT */
+/* 1.2- contact content */
+.contact .content{    
+    background: var(--white-color);
+    border-radius: 20px;
+}
+/* 1.2.2- contact-photo */
+.contact .content .contact-photo img{
+    width: 100%;    
+}
+/* 1.2.2- contact-info */
+.contact .content .contact-info{
+    padding: 40px 0px;
+}
+.contact .content .contact-info form div{
+    margin-bottom: 30px;
+}
+.contact .content .contact-info form input,
+.contact .content .contact-info form textarea{
+    border: 1px solid var(--gray-text-color);
+    color: var(--gray-text-color);
+    border-radius: 13px;
+    height: 50px;
+}
+.contact .content .contact-info form input::placeholder,
+.contact .content .contact-info form textarea::placeholder{
+    color: var(--gray-text-color);
+}
+.contact .content .contact-info form input:focus,
+.contact .content .contact-info form textarea:focus{
+    border: 1px solid var(--primary-blue-green);
+    color: var(--primary-blue-green);
+}
+.contact .content .contact-info form textarea{
+    height: 100px;
+}
+.contact .content .contact-info form button{
+    background: var(--blue-green-light);
+    color: var(--white-color);
+    padding: 10px 0px;
+    width: 84px;
+}
+.contact .content .contact-info form button:hover{
+    background: var(--primary-blue-green);
+}
+
+/* 2- MEDIA */
+@media screen and (max-width: 1199px){
+    .contact .content .contact-info{
+        padding: 10px 0px;
+    }   
+}
+@media screen and (max-width: 991px) {    
+    .contact .content .contact-photo img{
+        border-radius: 0px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 433px;
+    }
+    .contact .content .contact-info{
+        padding: 20px 0px;
+    }
+}
+@media screen and (max-width: 575px) {  
+    .contact .content{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .contact .content .contact-photo img{
+        height: 213px;
+    }  
+    .contact .content .contact-info{
+        padding: 12px;
+    }
+}

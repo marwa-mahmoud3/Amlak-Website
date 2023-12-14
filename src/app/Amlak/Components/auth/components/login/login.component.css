@@ -1,0 +1,138 @@
+.bg{
+    background: var(--gray-bg-color) url(../../../../../../assets/images/Amlak-Images/bg2.png) no-repeat center;
+    background-size: cover;
+}
+
+.login{
+    padding-bottom: 45px;
+}
+.login form{
+    background: rgba(255, 255, 255, 0.8);
+    width: 620px;
+    margin: auto;
+    padding: 32px 110px;    
+    border-radius: 16px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+}
+/* title */
+.login form .title h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+.login form .title p{
+    color: var(--primary-text-color);
+    padding-top: 16px;
+}
+.login form a{
+    color: var(--link-color);
+}
+
+/* info */
+.login form .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px 0px;
+}
+.login form .info input.form-control{
+    height: 50px;
+    border-radius: 13px;
+    border: 1px solid var(--gray-text-color);
+    color: var(--primary-blue-green);
+}
+.login form .info input.form-control:focus{
+    border: 1px solid var(--primary-blue-green);
+}
+.login form .info input.form-control::placeholder{
+    color: var(--gray-text-color);
+}
+.login form .info .password{
+    position: relative;
+}
+.login form .info .password button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login form .info .password button svg{
+    fill: var(--gray-text-color);
+}
+.login form .info .password input:focus + button svg{
+    fill: var(--primary-blue-green);
+}
+.login form .info .check a, .login form .info .check label{
+    font-size: 12px;
+    font-weight: 600;
+}
+.login form .info .form-check{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.login form .info input.form-check-input{
+    border: 1px solid var(--gray-text-color);
+    border-radius: 0%;
+    width: 20px;
+    height: 20px;    
+}
+.login form .info input.form-check-input:checked{
+    background: var(--primary-blue-green) url(../../../../../../assets/images/Amlak-Images/icons/check.svg) no-repeat center;
+    border: 1px solid var(--primary-blue-green);
+}
+.login form .info .action{
+    margin-top: 10px;
+}
+.login form .info .action button{
+    width: 100%;
+    height: 45px;
+    background: var(--primary-blue-green);
+    color: var(--white-color);
+}
+.login form .info .action button:hover{    
+    background: transparent;
+    color: var(--primary-blue-green);
+    border: 1px solid var(--primary-blue-green);
+}
+/* media */
+.login form .media{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.login form .media .or p{
+    font-size: 18px;
+    color: var(--primary-text-color);    
+}
+.login form .media .or p::before, .login form .media .or p::after{
+    content: "";
+    width: calc(50% - 28px);
+    height: 1px;    
+    background: var(--gray-text-color);
+    display: inline-block;
+    vertical-align: middle;    
+}
+.login form .media ul{
+    list-style: none;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+@media screen and (max-width:767px) {
+    .login form{
+        width: auto;
+        padding: 20px;
+    }           
+}
+@media screen and (max-width:575px) {
+    .login form .media .or p{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .login form .media .or p::before, .login form .media .or p::after{
+        content: "";
+        width: calc(50% - 14px);
+    }
+}

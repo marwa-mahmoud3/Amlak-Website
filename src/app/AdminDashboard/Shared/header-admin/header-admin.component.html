@@ -1,0 +1,37 @@
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">            
+              <div class="navbar-brand d-flex align-items-center">
+                <img class="img-fluid me-3" src="../../../../assets/images/Admin-Images/profile-images/dashbord.png" alt="dash-image">
+                <div>
+                    <span>{{'Hello' | translate}}</span>
+                    <p>Abdellah Elkobra</p>
+                </div>
+              </div>
+              <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.437 20.437C20.5696 20.437 20.6968 20.4897 20.7905 20.5835C20.8843 20.6772 20.937 20.8044 20.937 20.937C20.937 21.0696 20.8843 21.1968 20.7905 21.2906C20.6968 21.3843 20.5696 21.437 20.437 21.437L3.56299 21.439C3.43038 21.439 3.3032 21.3863 3.20943 21.2926C3.11567 21.1988 3.06299 21.0716 3.06299 20.939C3.06299 20.8064 3.11567 20.6792 3.20943 20.5855C3.3032 20.4917 3.43038 20.439 3.56299 20.439L20.437 20.437ZM20.437 12C20.5696 12 20.6968 12.0527 20.7905 12.1465C20.8843 12.2402 20.937 12.3674 20.937 12.5C20.937 12.6326 20.8843 12.7598 20.7905 12.8536C20.6968 12.9473 20.5696 13 20.437 13L10.437 13.001C10.3044 13.001 10.1772 12.9483 10.0834 12.8546C9.98967 12.7608 9.93699 12.6336 9.93699 12.501C9.93699 12.3684 9.98967 12.2412 10.0834 12.1475C10.1772 12.0537 10.3044 12.001 10.437 12.001L20.437 12ZM20.437 3.56201C20.5696 3.56201 20.6968 3.61469 20.7905 3.70846C20.8843 3.80223 20.937 3.9294 20.937 4.06201C20.937 4.19462 20.8843 4.3218 20.7905 4.41557C20.6968 4.50933 20.5696 4.56201 20.437 4.56201L3.56299 4.56301C3.43038 4.56301 3.3032 4.51033 3.20943 4.41657C3.11567 4.3228 3.06299 4.19562 3.06299 4.06301C3.06299 3.9304 3.11567 3.80323 3.20943 3.70946C3.3032 3.61569 3.43038 3.56301 3.56299 3.56301L20.437 3.56201Z" fill="#FFFFFF"/>
+                </svg>                    
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h1 class="offcanvas-title" id="offcanvasNavbarLabel">{{'Amlak' | translate}}</h1>
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-end">
+                  <app-sidebar class="d-lg-none"></app-sidebar>
+                  
+                  <div class="return">
+                    <a class="btn" routerLink="/admin">
+                        {{'Return to the website' | translate}} 
+                        <svg class="ms-1" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.97998 12.5H19.98" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.98 5.5L19.98 12.5L12.98 19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                      </a>
+                  </div>
+                </div>
+              </div>            
+          </nav>
+    </div>
+</header>

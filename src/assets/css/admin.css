@@ -1,0 +1,13 @@
+/* SHARED STYLE */
+.admin h1,
+.admin h2,
+.admin h3,
+.admin h4,
+.admin h5,
+.admin h6,
+.admin p,
+.admin ul{
+    padding: 0px;
+    margin: 0px;
+}
+

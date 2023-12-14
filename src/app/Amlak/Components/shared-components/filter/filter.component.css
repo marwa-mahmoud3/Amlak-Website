@@ -1,0 +1,84 @@
+/* 
+    1- FILTER
+    1.1 filter nav
+    1.2 filter tap
+
+    2-MEDIA
+ */
+ /* 1- FILTER */
+ .filter{
+    transform: translateY(-150px); 
+    width: 100%;
+    height: 134px;
+ }
+.filter .content{
+    position: relative;
+}
+/* 1.1 filter nav */
+.filter .content .nav{
+    position: absolute;
+    top: -20px;
+    left: 50px;    
+}
+.filter .content .nav button {
+    background-color: var(--white-color);
+    color: var(--primary-blue-green);
+    border: 1px solid var(--primary-blue-green);
+    border-radius: 0%;
+    width: 100px;
+  }
+.filter .content .nav button.active {
+  background-color: var(--primary-blue-green);
+  color: var(--white-color);
+}
+/* 1.2 filter tap */
+.filter .content .tab-pane form{
+    padding: 60px 14px 26px;
+    background-image: url(../../../../../assets/images/Amlak-Images/filter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 6px 3px 31px 0px rgba(0, 0, 0, 0.50);
+    border-radius: 16px;
+}
+.filter .content .tab-pane form input{
+    height: 50px;
+    color: var(--primary-blue-green);
+    border: 1px solid var(--gray-text-color);
+}
+.filter .content .tab-pane form input::placeholder{
+    color: var(--gray-text-color);
+}
+.filter .content .tab-pane form input:focus{
+    border: 1px solid var(--primary-blue-green);    
+}
+.filter .content .tab-pane form .search-btn{
+    margin-top: 16px;
+}
+.filter .content .tab-pane form .search-btn button{
+    width: 195px;
+}
+.filter .content .tab-pane form .search-btn .search{
+    background-color: var(--blue-green-light);
+    color: var(--white-color);
+    border: 1px solid var(--blue-green-light);
+}
+.filter .content .tab-pane form .search-btn .map{
+    border: 1px solid var(--blue-green-light);
+    color: var(--blue-green-light);
+}
+.filter .content .tab-pane form .search-btn .search:hover,
+.filter .content .tab-pane form .search-btn .map:hover{
+    background-color: var(--primary-blue-green);
+    color: var(--white-color);
+}
+/* 2- MEDIA */
+@media screen and (max-width: 992px) {
+    .filter .content .tab-pane form{
+        padding: 36px 14px 26px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .filter .content .tab-pane form .search-btn button{
+        width: 180px;
+    }    
+}

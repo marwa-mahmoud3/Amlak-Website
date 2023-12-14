@@ -1,0 +1,296 @@
+/* tabs */
+.dash .tabs {    
+    height: 53px;
+}
+
+.dash .tabs ul {
+    border-bottom: none;
+    border-radius: 8px;
+    background: var(--white-color);
+    position: relative;
+    z-index: 2;
+    padding: 12px 32px;
+}
+
+.dash .tabs ul li {
+    width: calc(100% / 3);
+    border-color: var(--primary-text-color) !important;
+}
+
+.dash .tabs ul li button,
+.dash .tabs ul li button:hover {
+    border: none;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    color: var(--gray-text-color);
+}
+
+.dash .tabs ul li button.active span {
+    border-bottom: 2px solid var(--primary-blue-green);
+    color: var(--primary-blue-green);
+    padding-bottom: 2px;
+}
+/* tab-content */
+.dash .tab-content{
+    margin: 60px 0px;
+}
+/* services & team-work */
+.dash .tab-content .team-services .available{
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--gray-text-color);
+}
+.dash .tab-content .team-services .available h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.dash .tab-content .team-services .available p{
+    font-weight: 500;
+}
+.dash .tab-content .team-services .available p span{
+    font-size: 34px;    
+}
+.dash .tab-content .team-services .content{
+    margin-top: 45px;
+}
+.dash .tab-content .team-services .content .info .title{
+    background: var(--gray-bg-dash);
+    padding: 10px;
+}
+.dash .tab-content .team-services .content .info .title h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+}
+.dash .tab-content .team-services .content .info form{
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.dash .tab-content .team-services .content .info form label,
+.dash .tab-content .units .u-add form .half label{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.dash .tab-content .team-services .content .info form .in,
+.dash .tab-content .units .u-add form .half .in{
+    position: relative;
+}
+.dash .tab-content .team-services .content .info form button,
+.dash .tab-content .units .u-add form .half button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.dash .tab-content .team-services .content .info form input,
+.dash .tab-content .units .u-add form .half input{
+    height: 50px;
+    border-radius: 6px;
+    border: 2px solid var(--gray-border);
+    background: transparent;
+}
+.dash .tab-content .team-services .content .info form input[type="file"]::-webkit-file-upload-button,
+.dash .tab-content .units .u-add form .half input[type="file"]::-webkit-file-upload-button{
+    background: url(../../../../../../assets/images/Amlak-Images/icons/upload.svg) no-repeat center;
+    color: transparent;
+    float: inline-end;
+    width: 30px;
+    border: none;
+    margin: 0px;
+    padding: 0px;    
+}
+.dash .tab-content .team-services .content .info form input[type="file"],
+.dash .tab-content .units .u-add form .half input[type="file"]{
+    padding: 10px;
+}
+.dash .tab-content .team-services .add button,
+.dash .tab-content .units .u-add form .add button{
+    background: var(--primary-blue-green);
+    color: var(--white-color);
+    width: 120px;
+    height: 37px;
+}
+
+/* units */
+.dash .tab-content .units{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.dash .tab-content .units .rate{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;    
+}
+.dash .tab-content .units .rate .numbers{
+    background: var(--gray-bg-dash);
+    height: 120px;
+    border-radius: 10px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;    
+    box-shadow: 0px 0px 1px 1px rgba(95, 45, 237, 0.20);
+}
+.dash .tab-content .units .rate .numbers h3{
+    font-size: 34px;
+    font-weight: 700;
+}
+.dash .tab-content .units .rate .numbers p{
+    font-weight: 500px;
+}
+.dash .tab-content .units .u-available{
+    background: var(--white-color);
+    border-radius: 20px;
+}
+.dash .tab-content .units .u-available .u-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+    padding: 10px 30px;
+    border-bottom: 2px solid var(--gray-border);
+}
+.dash .tab-content .units .u-available .u-header h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.dash .tab-content .units .u-available .u-header input{
+    width: 205px;
+    border-radius: 4px;    
+    border: 1px solid var(--gray-text-color);
+    font-size: 14px;
+}
+.dash .tab-content .units .u-available .u-header input::placeholder{
+    color: var(--gray-text-color);
+    font-size: 14px;
+}
+.dash .tab-content .units .u-available .u-header a{
+    color: var(--secondary-text-color);
+}
+.dash .tab-content .units .u-available .u-info{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    overflow-y: auto;    
+}
+.dash .tab-content .units .u-available .u-info::-webkit-scrollbar{
+    width: 15px;
+    background: var(--gray-bg-dash);
+}
+.dash .tab-content .units .u-available .u-info::-webkit-scrollbar-thumb{
+    background: var(--gray-text-color);
+}
+.dash .tab-content .units .u-available .u-info .unit{
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--gray-border);
+    display: flex;    
+    gap: 20px;          
+}
+.dash .tab-content .units .u-available .u-info .unit img{
+    height: 80px;
+    width: 100%;
+}
+.dash .tab-content .units .u-available .u-info .unit .text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dash .tab-content .units .u-available .u-info .unit .text .u-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.dash .tab-content .units .u-available .u-info .unit .text .u-text p{
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--salmon-light-color);
+    color: var(--white-color);
+    display: inline-block;
+    padding: 4px 12px;
+}
+.dash .tab-content .units .u-available .u-info .unit .text .u-text h4{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+.dash .tab-content .units .u-available .u-info .unit .text .u-text .extra{
+    display: flex;
+    gap: 20px;
+}
+.dash .tab-content .units .u-available .u-info .unit .text .u-text .extra span{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary-text-color);    
+}
+.dash .tab-content .units .u-available .u-info .unit .text .u-text .extra a{
+    font-size: 18px;
+    color: var(--primary-blue-green);
+}
+.dash .tab-content .units .u-available .u-info .unit .text .action{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dash .tab-content .units .u-available .u-info .unit .text .action .code{
+    align-self: flex-end;
+}
+.dash .tab-content .units .u-available .u-info .unit .text .action .code span{
+    font-size: 12px;
+    font-weight: 600;
+}
+.dash .tab-content .units .u-available .u-info .unit .text .action .icons{
+    display: flex;
+    gap: 15px;    
+}
+.dash .tab-content .units .u-add{
+    background: var(--white-color);
+    border-radius: 20px;
+}
+.dash .tab-content .units .u-add .title{
+    border-radius: 20px 20px 0px 0px;
+    background: var(--gray-bg-dash);
+    padding: 10px;
+}
+.dash .tab-content .units .u-add .title h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+}
+.dash .tab-content .units .u-add form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dash .tab-content .units .u-add form .half{
+    display: flex;
+    row-gap: 20px;
+}
+@media screen and (max-width:575px) {
+    .dash .tab-content .units .rate{
+        grid-template-columns: 1fr;
+    }
+    .dash .tab-content .units .u-available .u-header{
+        flex-direction: column;
+    }
+    .dash .tab-content .units .u-available .u-header input{
+        width: 100%;
+    }
+    .dash .tab-content .units .u-available .u-info .unit,
+    .dash .tab-content .units .u-available .u-info .unit .text{
+        flex-direction: column;
+    }
+    .dash .tab-content .units .u-available .u-info .unit img{
+        height: auto;        
+    }
+    .dash .tab-content .units .u-available .u-info .unit .text .u-text .extra{
+        gap: 10px;
+    }
+    .dash .tab-content .units .u-available .u-info .unit .text .action{
+        flex-direction: row;
+        margin-top: 10px;
+    }
+}

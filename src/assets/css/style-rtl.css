@@ -1,0 +1,257 @@
+/* HOME PAGE */
+.navbar .navbar-toggler svg,
+.units .t-content .tabs a.more svg,
+nav .offcanvas .offcanvas-body .return svg {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/* hero section */
+.hero .live,
+.hero h1 {
+  text-align: right;
+}
+
+.hero .photo {
+  left: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.hero .chat{
+  left: 0px;
+}
+@media screen and (max-width: 767px) {
+  .hero .photo{
+    justify-content: flex-start;
+  }
+}
+
+/* about section */
+.about .content .text p::after,
+.task .content .text p::after {
+  right: 0px;
+}
+
+/* services */
+.amlak .h-services .p-carousel-items-content {
+  direction: ltr;
+  text-align: right;
+}
+
+.amlak .h-services .p-carousel-prev {
+  right: calc(50% - 76px);
+}
+
+.amlak .h-services .p-carousel-next {
+  left: calc(50% - 76px);
+}
+
+.amlak .h-services .p-carousel-prev .p-icon-wrapper {
+  background: var(--white-color) url(../images/Amlak-Images/icons/right-arrow.svg) no-repeat center;
+}
+
+.amlak .h-services .p-carousel-next .p-icon-wrapper {
+  background: var(--white-color) url(../images/Amlak-Images/icons/left-arrow.svg) no-repeat center;
+}
+
+/* units section */
+.units .t-content .tab-content .item .item-header .budget {
+  right: 8px;
+}
+
+.units .t-content .tab-content .item .item-header .fav {
+  left: 8px;
+}
+
+/* contact section */
+.contact .content .contact-photo img {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.contact .content .contact-info form input#name {
+  background: url("../../../../../../assets/images/Amlak-Images/icons/user.svg") no-repeat 16px;
+}
+.contact .content .contact-info form input#name:focus {
+  background: url("../../../../../../assets/images/Amlak-Images/icons/g-user.svg") no-repeat 16px;
+}
+.contact .content .contact-info form input#email {
+  background: url("../../../../../../assets/images/Amlak-Images/icons/email.svg") no-repeat 16px;
+}
+.contact .content .contact-info form input#email:focus {
+  background: url("../../../../../../assets/images/Amlak-Images/icons/g-email.svg") no-repeat 16px;
+}
+.contact .content .contact-info form input#number {
+  background: url("../../../../../../assets/images/Amlak-Images/icons/email.svg") no-repeat 16px;
+}
+.contact .content .contact-info form input#number:focus {
+  background: url("../../../../../../assets/images/Amlak-Images/icons/g-email.svg") no-repeat 16px;
+}
+/* SHARED STYLE */
+/* filter section */
+.filter .content .nav .sale,
+.rent-oa .nav .rent {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.filter .content .nav .rent,
+.rent-oa .nav .fee {
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+
+.filter .content .tab-pane form .selects input {
+  background: url(../images/Amlak-Images/icons/dolar.svg) 16px no-repeat;
+}
+.filter .content .tab-pane form .selects input:focus {
+  background: url(../images/Amlak-Images/icons/g-dolar.svg) 16px no-repeat;
+}
+
+/* best-packages section */
+.packages .content .item .item-header img {
+  left: 40px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@media screen and (max-width: 991px) {
+  .packages .content .item .item-header img {
+    left: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .packages .content .item .item-header img {
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .packages .content .item .item-header img {
+    left: 20px;
+  }
+}
+
+/* OA PAGE */
+/* vote section */
+.vote .content .vote-photo .date {
+  right: 20px;
+}
+
+.amlak .mdc-linear-progress__bar-inner {
+  border-top-left-radius: 10% 10px;
+  border-bottom-left-radius: 10% 10px; 
+}
+
+/* chat section */
+.chat .content .messages::-webkit-scrollbar {
+  border-radius: 30px 0px 0px 30px;
+}
+
+.chat .content .messages::-webkit-scrollbar-thumb {
+  border-radius: 30px 0px 0px 0px;
+}
+
+/* rent section */
+.rent-oa .nav {
+  left: 12px;
+}
+.rent-oa .content form input[name="name"]{
+  background: var(--white-color) url(../images/Amlak-Images/icons/user.svg) no-repeat 16px;
+}
+.rent-oa .content form input[name="name"]:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-user.svg) no-repeat 16px;
+}
+.rent-oa .content form input[name="id"]{
+  background: var(--white-color) url(../images/Amlak-Images/icons/id-card.svg) no-repeat 16px;
+}
+.rent-oa .content form input[name="id"]:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-id-card.svg) no-repeat 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .rent-oa .nav {
+    left: 10px;
+  }
+}
+
+/* auth nav section */
+nav .auth .sign-up{
+  border-radius: 8px 0px 0px 8px;
+}
+nav .auth .login{
+  border-radius: 0px 8px 8px 0px;
+}
+.auth .sign-up .date .mat-mdc-form-field-infix div{
+  justify-content: flex-start;
+}
+.auth .sign-up .date .mat-mdc-form-field-infix input{
+  text-align: left;
+}
+/* login & sign-up page */
+.auth form .info .name input{
+  background: var(--white-color) url(../images/Amlak-Images/icons/user.svg) no-repeat 16px;
+}
+.auth form .info .name input:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-user.svg) no-repeat 16px;
+}
+.auth form .info .password button{
+  left: 16px;
+}
+.auth form .info .email input{
+  background: var(--white-color) url(../images/Amlak-Images/icons/email.svg) no-repeat 16px;
+}
+.auth form .info .email input:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-email.svg) no-repeat 16px;
+}
+.auth form .info .number input{
+  background: var(--white-color) url(../images/Amlak-Images/icons/email.svg) no-repeat 16px;
+}
+.auth form .info .number input:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-email.svg) no-repeat 16px;
+}
+.auth form .info .id input{
+  background: var(--white-color) url(../images/Amlak-Images/icons/id-card.svg) no-repeat 16px;
+}
+.auth form .info .id input:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-id-card.svg) no-repeat 16px;
+}
+/* .sign-up form .info .date input::after{
+  content: attr(placeholder) !important;    
+  color: var(--gray-text-color);
+}
+.sign-up form .info .date input::before{
+  content: '--/--/----';
+  color: var(--gray-text-color);
+}
+.sign-up form .info .date input:focus::after{
+  color: var(--primary-blue-green);
+} */
+.auth form .media .or p::before{
+  margin-left: 15px;
+}
+.auth form .media .or p::after{
+  margin-right: 15px;
+}
+@media screen and (max-width:575px) {
+  .auth form .media .or p::before{
+    margin-left: 5px;
+  }
+  .auth form .media .or p::after{
+    margin-right: 5px;
+  }
+}
+
+
+/* Admin */
+.login form .info .password .pass button{
+  left: 0px;
+}
+.dash .tab-content .team-services .content .info form button,
+.dash .tab-content .units .u-add form .half button{
+  left: 16px;
+}
+.dash .tab-content .units .u-available .u-header input{
+  background: transparent url(../../../../../../assets/images/Amlak-Images/icons/search-line.svg) no-repeat 16px;
+}

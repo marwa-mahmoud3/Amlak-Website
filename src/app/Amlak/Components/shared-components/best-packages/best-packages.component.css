@@ -1,0 +1,123 @@
+/* 
+    1- PACKAGES
+    1.1- packages title
+    1.2- packages content
+        1.2.1 -items
+
+    2- MEDIA
+ */
+/* 1- PACKAGES */
+/* 1.2- packages content */
+.packages .content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;    
+    flex-flow: row wrap;
+}
+.packages .content .pricing{
+    width: calc((100% - 40px) / 3 );
+}
+.packages .content .item{
+    padding: 50px 40px 25px;
+    background: var(--white-color);
+    position: relative;
+}
+.packages .content .item.free-plan:hover{
+    background: var(--salmon-light-color);
+    transition: all ease-in-out 0.5s;
+}
+/* header */
+.packages .content .item .item-header img{
+    position: absolute;
+    top: 20px;    
+}
+.packages .content .item .item-header h3{
+    font-size: 24px;
+    font-weight: 700;    
+}
+.packages .content .item .item-header h4{
+    font-size: 48px;
+    color: var(--primary-text-color);  
+    margin: 3px 0px;  
+}
+.packages .content .item .item-header h4 .num{
+    font-size: 36px;
+    color: var(--primary-text-color);
+}
+.packages .content .item .item-header h4 .mon{
+    font-size: 18px;
+    color: var(--gray-text-color);
+}
+.packages .content .item .item-header p{
+    color: var(--primary-text-color);
+    font-weight: 400;
+}
+/* body */
+.packages .content .item .item-body ul{
+    list-style: none;
+    padding: 0px;
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+.packages .content .item .item-body ul li{    
+    font-size: 18px;
+    display: flex;    
+    align-items: center;
+    column-gap: 15px;
+}
+.packages .content .item .item-body ul li .icon{
+    width: 20px;
+    height: 20px;
+    background: var(--salmon-light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.packages .content .item.free-plan .item-body ul li .icon{
+    background: var(--primary-blue-green);
+}
+.packages .content .item .item-body ul li.disable .icon{
+    background: var(--gray-text-color);
+}
+/* footer */
+.packages .content .item .item-footer button{
+    width: 100%;
+    margin-top: 30px;
+    height: 49px;    
+}
+.packages .content .item.paid-plan .item-footer button{
+    background: var(--salmon-light-color);
+    color: var(--primary-text-color);
+}
+.packages .content .item.free-plan .item-footer button{
+    background: var(--primary-blue-green);
+    color: var(--white-color);
+}
+.packages .content .item .item-footer button:hover{
+    background: transparent;
+    border: 1px solid var(--primary-blue-green);
+    color: var(--primary-blue-green);
+}
+
+/* 2- MEDIA */
+@media screen and (max-width: 991px) {
+    .packages .content .pricing{
+        width: calc((100% - 20px) / 2 );
+    }
+    .packages .content .item{
+        padding: 50px 24px 25px;
+    }      
+}
+@media screen and (max-width: 575px) {  
+    .packages .content{
+        margin-top: 40px;
+    }        
+    .packages .content .pricing{
+        width: 100%;
+    }     
+}

@@ -1,0 +1,242 @@
+/* HOME PAGE */
+/* hero section */
+.hero .live,
+.hero h1 {
+  text-align: left;
+}
+
+.hero .photo {
+  right: 0px;
+}
+.hero .chat{
+  right: 0px;
+}
+@media screen and (max-width: 767px) {
+  .hero .photo{
+    justify-content: flex-end;
+  }
+}
+/* about section */
+.about .content .text p::after,
+.task .content .text p::after {
+  left: 0px;
+}
+
+/* services */
+.amlak .h-services .p-carousel-prev {
+  left: calc(50% - 76px);
+}
+
+.amlak .h-services .p-carousel-next {
+  right: calc(50% - 76px);
+}
+
+.amlak .h-services .p-carousel-prev .p-icon-wrapper {
+  background: var(--white-color) url(../images/Amlak-Images/icons/left-arrow.svg) no-repeat center;
+}
+
+.amlak .h-services .p-carousel-next .p-icon-wrapper {
+  background: var(--white-color) url(../images/Amlak-Images/icons/right-arrow.svg) no-repeat center;
+}
+
+/* units section */
+.units .t-content .tab-content .item .item-header .budget {
+  left: 8px;
+}
+
+.units .t-content .tab-content .item .item-header .fav {
+  right: 8px;
+}
+
+/* contact section */
+.contact .content .contact-photo img {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.contact .content .contact-info form input#name {
+  background: url("../images/Amlak-Images/icons/user.svg") no-repeat calc(100% - 16px);
+}
+.contact .content .contact-info form input#name:focus {
+  background: url("../images/Amlak-Images/icons/g-user.svg") no-repeat calc(100% - 16px);
+}
+.contact .content .contact-info form input#email {
+  background: url("../images/Amlak-Images/icons/email.svg") no-repeat calc(100% - 16px);
+}
+.contact .content .contact-info form input#email:focus {
+  background: url("../images/Amlak-Images/icons/g-email.svg") no-repeat calc(100% - 16px);
+}
+.contact .content .contact-info form input#number {
+  background: url("../images/Amlak-Images/icons/email.svg") no-repeat calc(100% - 16px);
+}
+.contact .content .contact-info form input#number:focus {
+  background: url("../images/Amlak-Images/icons/g-email.svg") no-repeat calc(100% - 16px);
+}
+
+/* SHARED STYLE */
+/* filter section */
+.filter .content .nav .sale,
+.rent-oa .nav .rent {
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+}
+
+.filter .content .nav .rent,
+.rent-oa .nav .fee {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.filter .content .tab-pane form .selects input {
+  background: url(../images/Amlak-Images/icons/dolar.svg) calc(100% - 16px) no-repeat;
+}
+.filter .content .tab-pane form .selects input:focus{
+  background: url(../images/Amlak-Images/icons/g-dolar.svg) calc(100% - 16px) no-repeat;
+}
+
+/* best-packages section */
+.packages .content .item .item-header img {
+  right: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .packages .content .item .item-header img {
+    right: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .packages .content .item .item-header img {
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .packages .content .item .item-header img {
+    right: 20px;
+  }
+}
+
+/* OA PAGE */
+/* vote section */
+.vote .content .vote-photo .date {
+  left: 20px;
+}
+
+.amlak .mdc-linear-progress__bar-inner {
+  border-top-right-radius: 10% 18px;
+  border-bottom-right-radius: 10% 18px; 
+}
+
+/* chat section */
+.chat .content .messages::-webkit-scrollbar {
+  border-radius: 0px 30px 30px 0px;
+}
+
+.chat .content .messages::-webkit-scrollbar-thumb {
+  border-radius: 0px 30px 0px 0px;
+}
+
+/* rent section */
+.rent-oa .nav {
+  right: 12px;
+}
+.rent-oa .content form input[name="name"]{
+  background: var(--white-color) url(../images/Amlak-Images/icons/user.svg) no-repeat calc(100% - 16px);
+}
+.rent-oa .content form input[name="name"]:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-user.svg) no-repeat calc(100% - 16px);
+}
+.rent-oa .content form input[name="id"]{
+  background: var(--white-color) url(../images/Amlak-Images/icons/id-card.svg) no-repeat calc(100% - 16px);
+}
+.rent-oa .content form input[name="id"]:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-id-card.svg) no-repeat calc(100% - 16px);
+}
+
+@media screen and (max-width: 991px) {
+  .rent-oa .nav {
+    right: 10px;
+  }
+}
+
+/* auth nav section */
+nav .auth .sign-up{
+  border-radius: 0px 8px 8px 0px;
+}
+nav .auth .login{
+  border-radius: 8px 0px 0px 8px;
+}
+.auth .sign-up .date .mat-mdc-form-field-infix div{
+  justify-content: flex-start;
+}
+.auth .sign-up .date .mat-mdc-form-field-infix input{
+  text-align: right;
+}
+
+/* login & sign-up page */
+.auth form .info .name input{
+  background: var(--white-color) url(../images/Amlak-Images/icons/user.svg) no-repeat calc(100% - 16px);  
+}
+.auth form .info .name input:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-user.svg) no-repeat calc(100% - 16px);
+}
+.auth form .info .password button{
+  right: 16px;
+}
+.auth form .info .email input{
+  background: var(--white-color) url(../images/Amlak-Images/icons/email.svg) no-repeat calc(100% - 16px);
+}
+.auth form .info .email input:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-email.svg) no-repeat calc(100% - 16px);
+}
+.auth form .info .number input{
+  background: var(--white-color) url(../images/Amlak-Images/icons/email.svg) no-repeat calc(100% - 16px);
+}
+.auth form .info .number input:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-email.svg) no-repeat calc(100% - 16px);
+}
+.auth form .info .id input{
+  background: var(--white-color) url(../images/Amlak-Images/icons/id-card.svg) no-repeat calc(100% - 16px);
+}
+.auth form .info .id input:focus{
+  background: var(--white-color) url(../images/Amlak-Images/icons/g-id-card.svg) no-repeat calc(100% - 16px);
+}
+/* .sign-up form .info .date input::before{
+  content: attr(placeholder) !important;    
+  color: var(--gray-text-color);
+}
+.sign-up form .info .date input::after{
+  content: '--/--/----';
+  color: var(--gray-text-color);
+}
+.sign-up form .info .date input:focus::before{
+  color: var(--primary-blue-green);
+} */
+.auth form .media .or p::before{
+  margin-right: 15px;
+}
+.auth form .media .or p::after{
+  margin-left: 15px;
+}
+@media screen and (max-width:575px) {
+  .auth form .media .or p::before{
+    margin-right: 5px;
+  }
+  .auth form .media .or p::after{
+    margin-left: 5px;
+  }
+}
+
+
+/* Admin */
+.login form .info .password .pass button{
+  right: 0px;
+}
+.dash .tab-content .team-services .content .info form button,
+.dash .tab-content .units .u-add form .half button{
+  right: 16px;
+}
+.dash .tab-content .units .u-available .u-header input{
+  background: transparent url(../../../../../../assets/images/Amlak-Images/icons/search-line.svg) no-repeat calc(100% - 16px);
+}

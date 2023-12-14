@@ -1,0 +1,53 @@
+<div class="auth bg">
+    <app-nav></app-nav>
+    <div class="login">
+        <div class="container">
+            <form name="login">
+                <div class="title text-center">
+                    <h1>{{'Login' | translate}}</h1>
+                    <p>{{"Don't have an account yet?" | translate}} <a routerLink="/sign-up">{{'Sign up for free' | translate}}</a></p>
+                </div>
+                <div class="info">
+                    <div class="name">
+                        <input type="text" class="form-control shadow-none" placeholder="{{'Your Name' | translate}}" autocomplete="name" required>
+                    </div>
+                    <div class="password" >
+                        <input [type]="fieldTextType ? 'text' : 'password'" class="form-control shadow-none" placeholder="{{'Password' | translate}}" autocomplete="current-password" required>
+                        <button class="btn border-0 p-0" type="button" (click)="showHidePassword()">
+                            <svg *ngIf="!fieldTextType" width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.0323 0.617469C20.5161 0.218494 19.6129 0.218494 18.9677 0.617469L15.871 3.01132C14.508 2.62022 13.0667 2.41764 11.6129 2.41286C6.70968 2.5126 2.32258 4.50747 0 7.79902C0.258065 8.19799 0.645161 8.59697 1.03226 8.99594C2.06452 10.0931 3.35484 10.9908 4.77419 11.689L2.58065 13.3847C2.06452 13.7836 1.93548 14.4819 2.58065 14.9806C3.09677 15.3795 4 15.4793 4.64516 14.9806L21.0323 2.21337C21.5484 1.71465 21.5484 1.01644 21.0323 0.617469ZM7.35484 9.59441L5.67742 10.8911C4.12903 10.1929 2.70968 9.19543 1.67742 7.99851C3.22581 6.30286 5.29032 5.10594 7.74194 4.50747C6.06452 5.90389 5.93548 8.09825 7.35484 9.59441ZM11.7419 6.30286C11.0968 5.80414 11.2258 5.00619 11.871 4.50747C12.5161 4.1085 13.4194 4.1085 14.0645 4.50747L11.7419 6.30286ZM22.3226 6.80158C21.6774 6.10337 20.9032 5.40517 20 4.90645L18.7097 5.90389C19.7419 6.50235 20.6452 7.20056 21.4194 8.09825C19.2258 10.6916 15.4839 12.2875 11.4839 12.2875H10.4516L9.16129 13.2849C10.0645 13.1852 10.8387 13.2849 11.6129 13.2849C15.871 13.2849 19.871 11.689 22.3226 8.99594C22.7097 8.59697 22.9677 8.19799 23.3548 7.79902C22.9677 7.49979 22.7097 7.10081 22.3226 6.80158ZM16.7742 7.3003L11.6129 11.2901C14.4516 11.2901 16.7742 9.49466 16.7742 7.3003Z"/>
+                            </svg>                               
+                            <svg *ngIf="fieldTextType" width="21" height="12" viewBox="0 0 21 12" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.395 5.70414C19.6003 4.08789 18.2206 2.69016 16.4266 1.68369C14.6325 0.677217 12.5027 0.106132 10.3004 0.0410156C8.09802 0.106132 5.9682 0.677217 4.17416 1.68369C2.38012 2.69016 1.00048 4.08789 0.20578 5.70414C0.15211 5.82086 0.15211 5.94867 0.20578 6.06539C1.00048 7.68164 2.38012 9.07938 4.17416 10.0858C5.9682 11.0923 8.09802 11.6634 10.3004 11.7285C12.5027 11.6634 14.6325 11.0923 16.4266 10.0858C18.2206 9.07938 19.6003 7.68164 20.395 6.06539C20.4486 5.94867 20.4486 5.82086 20.395 5.70414ZM10.3004 9.33789C9.43174 9.33789 8.58261 9.13537 7.86037 8.75593C7.13813 8.3765 6.57521 7.8372 6.2428 7.20622C5.91038 6.57524 5.82341 5.88093 5.99287 5.21109C6.16233 4.54125 6.58062 3.92597 7.19484 3.44304C7.80906 2.96011 8.59162 2.63123 9.44356 2.49799C10.2955 2.36475 11.1786 2.43314 11.9811 2.69449C12.7836 2.95585 13.4695 3.39845 13.9521 3.96631C14.4347 4.53418 14.6923 5.2018 14.6923 5.88477C14.6905 6.80016 14.2272 7.67766 13.4039 8.32494C12.5807 8.97222 11.4646 9.33649 10.3004 9.33789Z"/>
+                            </svg>                                
+                        </button>                    
+                    </div>
+                    <div class="check d-flex justify-content-between">
+                        <div>
+                            <a routerLink="/">{{'Forgot your password?' | translate}}</a>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label" for="checkbox">{{'Remember me' | translate}}</label>
+                            <input type="checkbox" class="form-check-input shadow-none" id="checkbox">                            
+                        </div>
+                    </div>                                        
+                    <div class="action">
+                        <button type="button" class="btn">{{'Login' | translate}}</button>
+                    </div>
+                </div>
+                <div class="media">                    
+                    <div class="or text-center">
+                        <p>{{'OR' | translate}}</p>
+                    </div>
+                    <div>                        
+                        <ul>
+                            <li><a routerLink="/"><img class="img-fluid" src="../../../../../../assets/images/Amlak-Images/icons/google-icon.png" alt="image"></a></li>
+                            <li><a routerLink="/"><img class="img-fluid" src="../../../../../../assets/images/Amlak-Images/icons/facebook-icon.png" alt="image"></a></li>
+                            <li><a routerLink="/"><img class="img-fluid" src="../../../../../../assets/images/Amlak-Images/icons/instagram-icon.png" alt="image"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

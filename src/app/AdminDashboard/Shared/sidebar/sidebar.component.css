@@ -1,0 +1,41 @@
+aside{
+    background: var(--white-color);
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+aside p{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary-text-color);        
+    background: var(--gray-bg-dash);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+aside ul{
+    list-style: none;    
+}
+aside ul.user{
+    margin-top: 20px;
+}
+aside ul li{
+    padding: 15px 0px;
+    border-bottom: 1px solid var(--gray-border);
+}
+aside ul li a{
+    color: var(--secondary-text-color);
+}
+aside ul li a.active{
+    color: var(--primary-blue-green);
+}
+aside ul li a.active svg path{
+    stroke: var(--primary-blue-green);
+}
+aside ul li .budget{
+    font-size: 10px;
+    background: var(--primary-blue-green);
+    color: var(--white-color);
+    padding-right: 9px;
+    padding-left: 9px;
+    border-radius: 15px;
+}
+

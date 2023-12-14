@@ -1,0 +1,115 @@
+.rent-oa{
+    position: relative;
+}
+.rent-oa .nav{
+    position: absolute;
+    top: 87px;
+}
+.rent-oa .nav button{
+    border-radius: 0px;
+    border: 1px solid var(--primary-blue-green);
+    background: var(--white-color);
+    color: var(--primary-blue-green);
+    width: 220px;
+}
+.rent-oa .nav button.active{
+    background: var(--primary-blue-green);
+    color: var(--white-color);
+}
+
+.rent-oa .content{
+    background: rgba(0, 0, 0, 0.05);
+    padding: 24px 0px;
+}
+.rent-oa .content .deadline p.pay{
+    color: var(--primary-text-color);
+}
+.rent-oa .content .deadline p.time{
+    background: var(--white-color);
+    padding: 7px 14px;
+}
+.rent-oa .content .deadline p.time span{
+    color: var(--primary-blue-green);
+}
+
+.rent-oa .content form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+    gap: 30px;    
+    margin-top: 15px;
+}
+.rent-oa .content form input{
+    border: 1px solid var(--gray-text-color);
+    height: 50px;
+    border-radius: 13px;
+    color: var(--gray-text-color);
+}
+.rent-oa .content form input::placeholder{
+    color: var(--gray-text-color);
+}
+.rent-oa .content form input:focus{
+    border-color: var(--primary-blue-green);
+    color: var(--primary-blue-green);
+}
+.rent-oa .content form button{
+    background: var(--primary-blue-green);
+    color: var(--white-color);
+    height: 50px;
+    width: 120px;
+    border-radius: 8px;
+}
+.rent-oa .content form button:hover{
+    border: 1px solid var(--primary-blue-green);
+    color: var(--primary-blue-green);
+    background: transparent;
+}
+@media screen and (max-width: 991px) {
+    .rent-oa .nav{
+        top: 80px;
+    }
+    .rent-oa .content form{
+        grid-template-columns: 1fr 1fr 1fr;        
+        gap: 15px; 
+    }   
+    .rent-oa .content form .btns{        
+        grid-column-end: 4;
+        justify-self: end;
+    }
+}
+@media screen and (max-width: 768px) { 
+    .rent-oa .content .deadline{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .rent-oa .content form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }       
+    .rent-oa .content form .btns{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 575px) {
+    .rent-oa .nav{
+        top: 55px;
+    }    
+    .rent-oa .content .deadline{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .rent-oa .nav{
+        top: 60px;
+    } 
+    .rent-oa .nav button{
+        font-size: 12px;
+        width: 170px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .rent-oa .nav button{
+        font-size: 10px;
+        width: fit-content;
+    }
+}

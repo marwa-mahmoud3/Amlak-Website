@@ -1,0 +1,151 @@
+.bg{
+    background: var(--gray-bg-color) url(../../../../../../assets/images/Amlak-Images/bg2.png) no-repeat center;
+    background-size: cover;
+}
+
+.sign-up{
+    padding-bottom: 45px;
+}
+.sign-up form{
+    background: rgba(255, 255, 255, 0.8);
+    width: 620px;
+    margin: auto;
+    padding: 32px 110px;    
+    border-radius: 16px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+}
+/* title */
+.sign-up form .title h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+.sign-up form .title p{
+    color: var(--primary-text-color);
+    padding-top: 16px;
+}
+.sign-up form a{
+    color: var(--link-color);
+}
+
+/* info */
+.sign-up form .info{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 30px 0px;
+}
+.sign-up form .info input.form-control{
+    height: 50px;
+    border-radius: 13px;
+    border: 1px solid var(--gray-text-color);
+    color: var(--primary-blue-green);
+}
+.sign-up form .info input.form-control:focus{
+    border: 1px solid var(--primary-blue-green);
+}
+.sign-up form .info input.form-control::placeholder{
+    color: var(--gray-text-color);
+}
+.sign-up form .info .password{
+    position: relative;
+}
+.sign-up form .info .password button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sign-up form .info .password button svg{
+    fill: var(--gray-text-color);
+}
+.sign-up form .info .password input:focus + button svg{
+    fill: var(--primary-blue-green);
+}
+.sign-up form .info .action{
+    margin-top: 10px;
+}
+.sign-up form .info .action button{ 
+    width: 100px;   
+    height: 39px;
+    background: var(--primary-blue-green);
+    color: var(--white-color);
+}
+.sign-up form .info .action button:hover{    
+    background: transparent;
+    color: var(--primary-blue-green);
+    border: 1px solid var(--primary-blue-green);
+}
+.sign-up form .info .action button.back{
+    background: transparent;
+    color: var(--primary-blue-green);
+    border: 1px solid var(--primary-blue-green);
+}
+.sign-up form .info .action button.back:hover{
+    background: var(--primary-blue-green);
+    color: var(--white-color);
+}
+.modal .modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 50px;    
+}
+.modal .success{
+    gap: 24px;
+}
+.modal .modal-body p{
+    font-size: 18px;
+}
+.modal .modal-body span{
+    color: var(--link-color);
+}
+code-input{
+    display: flex;
+    gap: 13px;    
+}
+/* media */
+.sign-up form .media{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sign-up form .media .or p{
+    font-size: 18px;
+    color: var(--primary-text-color);    
+}
+.sign-up form .media .or p::before, .sign-up form .media .or p::after{
+    content: "";
+    width: calc(50% - 28px);
+    height: 1px;    
+    background: var(--gray-text-color);
+    display: inline-block;
+    vertical-align: middle;    
+}
+.sign-up form .media ul{
+    list-style: none;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+@media screen and (max-width:767px) {
+    .sign-up form{
+        width: auto;
+        padding: 20px;
+    }           
+}
+@media screen and (max-width:575px) {
+    .sign-up form .media .or p{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .sign-up form .media .or p::before, .sign-up form .media .or p::after{
+        content: "";
+        width: calc(50% - 14px);
+    }
+    .modal .modal-body{                
+        padding: 20px;    
+    }    
+}

@@ -1,0 +1,4 @@
+.home{
+    background: var(--gray-bg-color) url(../../../../assets/images/Amlak-Images/bg1.png) center no-repeat;
+    background-size: cover;
+}

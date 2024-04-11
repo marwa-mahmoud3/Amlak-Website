@@ -1,27 +1,9 @@
-# Amlak
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![home-en](https://github.com/marwa-mahmoud3/Amlak-Website/assets/58340861/eed57f49-c29b-4f15-a06d-c6b53f809ad4)
+![home-ar](https://github.com/marwa-mahmoud3/Amlak-Website/assets/58340861/fd2ca2df-f147-4a9b-9219-d1be102b6edc)
+![owner-association-ar](https://github.com/marwa-mahmoud3/Amlak-Website/assets/58340861/785e4255-a590-4772-b804-1ff2d30431a1)
+![owner-association-en](https://github.com/marwa-mahmoud3/Amlak-Website/assets/58340861/0605022e-5297-42a7-985c-d2ac68e08fda)
+![signup-ar](https://github.com/marwa-mahmoud3/Amlak-Website/assets/58340861/e3cdcaf7-b7cf-410c-b2f6-b90c936c2384)
+![signup-en](https://github.com/marwa-mahmoud3/Amlak-Website/assets/58340861/872bca79-dbc3-4410-aff2-cd83afe26f58)
+![dashboard(units)](https://github.com/marwa-mahmoud3/Amlak-Website/assets/58340861/d7ebc3d0-337a-41de-8bee-49686197d20a)
+![dashboard(services)](https://github.com/marwa-mahmoud3/Amlak-Website/assets/58340861/5e988062-3834-491f-a4d1-094b7a37f288)
+![dashboard(work Team)](https://github.com/marwa-mahmoud3/Amlak-Website/assets/58340861/731a656a-0c75-47b3-bc29-b48525e601b5)
